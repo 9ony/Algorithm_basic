@@ -33,6 +33,7 @@ public class MergeArray {
 		//3항연산자로변경
 		while(pa<a.length&&pb<b.length)
 			result[pr++]=(a[pa]<b[pb])?a[pa++]:b[pb++];
+		printProcess(a,b,result);
 		//남아있는 요소가 있을수 있음
 		while(pa<a.length) {
 			result[pr++]=a[pa++];
@@ -40,5 +41,12 @@ public class MergeArray {
 		while(pb<b.length) {
 			result[pr++]=b[pb++];
 		}
+	}
+	static public void printProcess(int[] a, int[] b, int[] c) {
+		System.out.println("---------------------");
+		System.out.println("a: "+Arrays.toString(a));
+		System.out.println("b: "+Arrays.toString(b));
+		System.out.println("c: "+Arrays.toString(c));
+		System.out.println("---------------------");
 	}
 }

@@ -3,7 +3,7 @@ package day05;
 import java.util.Arrays;
 
 public class SelectionSort {
-	//선택정렬
+	//선택정렬 : 최소(또는 최대) 값을 선택해서 해당 값을 앞 위치부터 가져다 두는 형태
 	public static void selectSort(int[] arr) {
 		int i=0;
 		int min=0;
